@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import profilePic from '../../assets/viraj.png'
+import profilePic from '../../assets/Viraj.png'
 
 const socialLinks = [
   { icon: FaGithub, label: 'GitHub', url: 'https://github.com/Virajkamble632' },
