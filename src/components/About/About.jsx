@@ -21,7 +21,7 @@ const About = () => (
         <h2 className="mt-4 text-3xl font-semibold text-text sm:text-4xl">Full Stack Web Developer with MERN expertise.</h2>
       </motion.div>
 
-      <div className="grid gap-10 lg:grid-cols-[1.4fr_0.9fr] lg:items-start">
+      <div className=" w-full gap-10 lg:grid-cols-[1.4fr_0.9fr] lg:items-start">
         <motion.div initial={{ opacity: 0, x: -60 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="space-y-6 rounded-[2rem] border border-white/10 bg-surface/80 p-8 shadow-soft backdrop-blur-xl">
           <p className="text-base leading-8 text-textSecondary">
             Full Stack Web Developer with hands-on experience building responsive, scalable web applications on the MERN stack. Skilled in REST API design, JWT authentication, real-time communication systems, and reusable UI component architecture.
