@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaEnvelope, FaLinkedin, FaGithub, FaPhone } from 'react-icons/fa'
+import { link } from 'framer-motion/client'
 
 const contacts = [
-  { label: 'Email', value: 'virajkamble0706@gmail.com', icon: FaEnvelope },
-  { label: 'LinkedIn', value: 'https://www.linkedin.com/in/virajkamble0706', icon: FaLinkedin },
-  { label: 'GitHub', value: 'https://github.com/Virajkamble632', icon: FaGithub },
+  { label: 'Email', value: 'virajkamble0706@gmail.com', icon: FaEnvelope, link:"mailto:virajkamble0706@gmail.com" },
+  { label: 'LinkedIn', value: 'https://www.linkedin.com/in/virajkamble0706', icon: FaLinkedin, link:"https://www.linkedin.com/in/virajkamble0706"},
+  { label: 'GitHub', value: 'https://github.com/Virajkamble632', icon: FaGithub, link: "https://github.com/Virajkamble632" },
   { label: 'Phone', value: '+91 8591205036', icon: FaPhone },
 ]
 
@@ -34,7 +35,7 @@ const Contact = () => {
     const mailtoLink = `mailto:virajkamble0706@gmail.com?subject=${encodeURIComponent(formData.subject || 'Portfolio Website Contact')}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`
 
     window.location.href = mailtoLink
-    setStatus('Your email app should open with your message ready to send.')
+    setStatus('Redirecting to email...')
     setFormData({ name: '', email: '', subject: '', message: '' })
   }
 
@@ -50,7 +51,7 @@ const Contact = () => {
           <motion.div initial={{ opacity: 0, x: -60 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="rounded-[2rem] border border-white/10 bg-surface/80 p-8 shadow-soft backdrop-blur-xl">
             <h3 className="text-xl font-semibold text-text">Contact Details</h3>
             <p className="mt-3 text-sm leading-7 text-textSecondary">Reach out via email or LinkedIn, or send a message using the form. I typically respond within one business day.</p>
-            <div className="mt-8 space-y-4">
+            <div className="mt-8 space-y-4 cursor-pointer">
               {contacts.map((item) => (
                 <div key={item.label} className="flex items-start gap-4 rounded-3xl border border-white/10 bg-white/5 p-5">
                   <div className="mt-1 inline-flex h-11 w-11 items-center justify-center rounded-3xl bg-primary/10 text-primary">
@@ -58,7 +59,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-text">{item.label}</p>
-                    <p className="mt-1 text-sm text-textSecondary">{item.value}</p>
+                    <a href={item.link} target={item.label !== "Email" && item.label !== "Phone" ? "_blank" : undefined}rel="noopener noreferrer" className="mt-1 block text-sm text-textSecondary transition-colors duration-300 hover:text-primary hover:underline">
+                      {item.value}
+                    </a>
                   </div>
                 </div>
               ))}
