@@ -45,7 +45,7 @@ const Hero = () => (
               href="#about"
               className="inline-flex w-full items-center justify-center rounded-full border border-sky-900/10 bg-white/80 px-6 py-3 text-sm font-semibold text-sky-950 transition duration-300 hover:-translate-y-0.5 hover:border-sky-900/20 hover:text-sky-700 sm:w-auto"
             >
-              LEARN MORE ABOUT ME
+               MORE ABOUT ME
             </a>
           </div>
 
@@ -84,7 +84,7 @@ const Hero = () => (
               <div className="flex h-full flex-col items-center justify-center rounded-[1.5rem] bg-white/85 p-6 text-center shadow-soft">
                 <img src={profilePic} alt="Viraj Kamble" className="mb-6 h-48 w-48 rounded-full object-cover border border-white/10 shadow-xl sm:h-56 sm:w-56" />
                 <h2 className="text-2xl font-semibold text-text">Viraj Kamble</h2>
-                <p className="text-sm text-textSecondary">MERN Stack Web Developer</p>
+                <p className="text-sm text-textSecondary">Full Stack Web Developer</p>
                 <p className="mt-4 text-sm leading-6 text-textSecondary">
                   Building responsive, maintainable applications with React, Node.js, Express, MongoDB, and Tailwind CSS.
                 </p>
