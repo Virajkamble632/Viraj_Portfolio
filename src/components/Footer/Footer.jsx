@@ -4,8 +4,12 @@ const Footer = () => (
   <footer className="border-t border-primary/10 bg-background/90 px-6 py-8 sm:px-8 lg:px-10">
     <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
       <div>
+<<<<<<< HEAD
         <p className="text-sm text-textSecondary">© 2026 Viraj Kamble. </p>
         <p className="text-sm text-textSecondary">Built with React, Tailwind, and motion.</p>
+=======
+        <p className="text-sm text-textSecondary">© 2026 Viraj Kamble.</p>
+>>>>>>> 81a183d (Add portfolio website and V favicon)
       </div>
       <div className="flex items-center gap-4">
         <a href="https://github.com/Virajkamble632" target="_blank" rel="noreferrer" className="text-textSecondary transition hover:text-primary">

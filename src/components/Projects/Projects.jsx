@@ -9,7 +9,11 @@ const projects = [
     description: 'Healthcare appointment management system with patient, doctor, and admin roles.',
     features: ['Appointment booking', 'Prescription management', 'Admin doctor/patient controls'],
     stack: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
+<<<<<<< HEAD
     github: '#',
+=======
+    github: 'https://github.com/Virajkamble632/mediqueue.git',
+>>>>>>> 81a183d (Add portfolio website and V favicon)
     demo: 'https://mediqueue-iyui.onrender.com/',
     image: mediqueueImage,
   },
@@ -18,8 +22,13 @@ const projects = [
     description: 'Real-time video communication app built with WebRTC and Socket.io for browser-based conferencing.',
     features: ['Mute/unmute', 'Camera toggle', 'Dynamic room creation'],
     stack: ['React', 'Node.js', 'WebRTC', 'Socket.io'],
+<<<<<<< HEAD
     github: 'https://github.com/Virajkamble632/Reezo',
     demo: 'https://rezo-7rzn.onrender.com',
+=======
+    github: 'https://github.com/Virajkamble632/Reezo.git',
+    demo: 'https://reezo-9si4.onrender.com',
+>>>>>>> 81a183d (Add portfolio website and V favicon)
     image: Reezo,
   },
   {
