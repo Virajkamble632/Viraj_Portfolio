@@ -22,15 +22,6 @@ const projects = [
     demo: 'https://reezo-9si4.onrender.com',
     image: Reezo,
   },
-  {
-    title: 'Admin Navigation Panel',
-    description: 'Responsive admin page with collapsible sidebar navigation and reusable UI components.',
-    features: ['Collapsible sidebar', 'Protected routing', 'Active-route state'],
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'React Router'],
-    github: 'https://github.com/codolog-Workspace/CODOLOG_ADMIN.git',
-    demo: null,
-    image: adminPageImage,
-  },
 ]
 
 const Projects = () => (
