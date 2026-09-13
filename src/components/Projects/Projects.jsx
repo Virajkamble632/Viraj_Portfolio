@@ -22,6 +22,15 @@ const projects = [
     demo: 'https://reezo-9si4.onrender.com',
     image: Reezo,
   },
+  {
+  title: 'ClientFlow AI',
+  description: 'AI-powered CRM platform for managing leads, sales pipelines, tasks, and customer interactions.',
+  features: ['Lead management', 'AI lead analysis', 'Task & sales pipeline management', 'Analytics dashboard', 'AI email & WhatsApp generation', 'JWT authentication'],
+  stack: ['React', 'Node.js', 'Express', 'MongoDB', 'Groq AI', 'JWT'],
+  github: 'https://github.com/Virajkamble632/ClientFlow.git',
+  demo: 'https://clientflow-lovat-nine.vercel.app',
+  image: clientflowImage,
+},
 ]
 
 const Projects = () => (
