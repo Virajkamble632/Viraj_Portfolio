@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import mediqueueImage from '../../assets/mediqueue.png'
-import adminPageImage from '../../assets/Admin Page.png'
+import adminPageImage from '../../assets/clientflow.png'
 import Reezo from '../../assets/reezo.png';
 
 const projects = [
@@ -23,14 +23,14 @@ const projects = [
     image: Reezo,
   },
   {
-  title: 'ClientFlow AI',
-  description: 'AI-powered CRM platform for managing leads, sales pipelines, tasks, and customer interactions.',
-  features: ['Lead management', 'AI lead analysis', 'Task & sales pipeline management', 'Analytics dashboard', 'AI email & WhatsApp generation', 'JWT authentication'],
-  stack: ['React', 'Node.js', 'Express', 'MongoDB', 'Groq AI', 'JWT'],
-  github: 'https://github.com/Virajkamble632/ClientFlow.git',
-  demo: 'https://clientflow-lovat-nine.vercel.app',
-  image: clientflowImage,
-},
+    title: 'Admin Navigation Panel',
+    description: 'Responsive admin page with collapsible sidebar navigation and reusable UI components.',
+    features: ['Collapsible sidebar', 'Protected routing', 'Active-route state'],
+    stack: ['React', 'TypeScript', 'Tailwind CSS', 'React Router'],
+    github: 'https://github.com/codolog-Workspace/CODOLOG_ADMIN.git',
+    demo: null,
+    image: adminPageImage,
+  },
 ]
 
 const Projects = () => (
