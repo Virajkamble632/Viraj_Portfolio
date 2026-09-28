@@ -16,7 +16,7 @@ const skillCategories = [
   {
     title: 'Backend',
     icon: SiNodedotjs,
-    items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication', 'Socket.io', 'WebRTC'],
+    items: ['Node.js', 'Express.js', 'REST APIs', 'JWT Authentication', 'Socket.io', 'WebRTC', 'Livekit'],
   },
   {
     title: 'Databases',
